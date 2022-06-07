@@ -9,7 +9,10 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-image: url(https://mixkit.imgix.net/art/preview/mixkit-person-overwhelmed-by-a-mountain-of-paperwork-70-original-large.png?q=80&auto=format%2Ccompress);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,8 +30,11 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  color: white
 }
-
+h2 {
+  color: white
+}
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
@@ -38,6 +44,7 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color: white
 }
 
 .inc-exp-container {
@@ -89,7 +96,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #005A9C;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
