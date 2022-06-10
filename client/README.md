@@ -1,5 +1,4 @@
-# Flousi  
-a simple expense tracker.
+# Flousi - Client side  
 
 ## Available Scripts
 
