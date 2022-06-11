@@ -3,7 +3,7 @@ const dotenv = require ('dotenv')
 const colors = require ('colors')
 const morgan = require ('morgan')
 
-dotenv.config({ path: './config/config.env' })
+dotenv.config({ path: './config/.env' })
 
 const transactions = require('./routes/transactions')
 
