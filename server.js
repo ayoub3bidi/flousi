@@ -12,6 +12,8 @@ const transactions = require('./routes/transactions')
 
 const app = express()
 
+app.use(express.json())
+
 app.use('/transactions', transactions)
 
 const PORT = process.env.PORT || 5000
