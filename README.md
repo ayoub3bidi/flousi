@@ -1,5 +1,6 @@
 # Flousi  
-a simple expense tracker.
+A simple expense tracker.  
+You can find the MERN version in the second branch.  
 
 ## Available Scripts
 
