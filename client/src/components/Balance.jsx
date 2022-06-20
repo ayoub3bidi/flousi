@@ -29,10 +29,9 @@ export const Balance = () => {
   const total = amounts.reduce((acc, item) => (acc += item), 0);
 
   return (
-    <>
-      <h4>Your Balance</h4>
-    <h1>${numberWithCommas(total)}</h1>
-    </>
+    <div>
+      <h2>Your Balance: ${numberWithCommas(total)}</h2>
+    </div>
   )
 }
 
