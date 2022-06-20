@@ -17,6 +17,10 @@ function moneyFormatter(num) {
   );
 }
 
+function numberWithCommas(x){
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+}
+
 const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
 
@@ -35,11 +39,11 @@ const IncomeExpenses = () => {
     <div className="inc-exp-container">
         <div>
           <h4>Income</h4>
-  <p className="money plus">{moneyFormatter(income)}</p>
+  <p className="money plus">${numberWithCommas(income)}</p>
         </div>
         <div>
           <h4>Expense</h4>
-  <p className="money minus">{moneyFormatter(expense)}</p>
+  <p className="money minus">${numberWithCommas(expense)}</p>
         </div>
       </div>
   )

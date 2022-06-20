@@ -17,6 +17,10 @@ function moneyFormatter(num) {
   );
 }
 
+function numberWithCommas(x){
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+}
+
 export const Balance = () => {
   const { transactions } = useContext(GlobalContext);
 
@@ -27,7 +31,7 @@ export const Balance = () => {
   return (
     <>
       <h4>Your Balance</h4>
-    <h1>{moneyFormatter(total)}</h1>
+    <h1>${numberWithCommas(total)}</h1>
     </>
   )
 }
